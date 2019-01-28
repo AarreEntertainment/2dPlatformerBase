@@ -1,0 +1,80 @@
+﻿{"interactables":
+	[
+	{"name":"pinkbox",
+		"interactions":
+			[
+			{"text":"tämä on vaaleanpunainen laatikko",
+			"flagsRequiredtoInteract":
+					[
+					],
+				"options":
+					[
+						{"text":"ok",
+						"flagname":"eiolevp",
+						"flagValue":false
+						},
+						{"text":"ei ole",
+						"flagname":"eiolevp",
+						"flagValue":true}
+					]
+			},
+			{"text":"tämä ei ole tosiaankaan vaaleanpunainen laatikko",
+			"flagsRequiredtoInteract":
+					[
+						"eiolevp"
+					],
+				"options":
+					[
+					]
+			}
+			]
+		}
+	],
+	"transitions":
+	[
+	{"name":"main",
+		"interactions":
+			[
+			{"flagsRequiredtoInteract":
+				[
+				],
+			"text":"Helvetinmoinen sade täällä...",
+			"options":
+				[
+				]
+			}
+			]
+	},
+	{"name":"yardToPlant",
+		"interactions":
+			[
+			{"flagsRequiredtoInteract":
+				[
+				],
+			"text":"Vieläkin sataa...",
+			"options":
+				[
+				]
+			}
+			]
+	},
+	{"name":"plantToYard",
+		"interactions":
+			[
+			{"flagsRequiredtoInteract":
+				[
+				],
+			"text":"Vihdoinkin sisätiloissa... Olenkohan liian etuajassa?",
+			"options":
+				[
+				]
+			}
+			]
+	}
+	],
+"flags":
+	[
+	{"name":"eiolevp",
+	"value":false}
+	]
+}
